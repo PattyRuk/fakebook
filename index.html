@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="OOJS ASSIGNMENT 3">
+    <link rel="icon" href="./assets/media/fantasy-flight-games-brands-solid.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/styles.css"/>
+    <title>FakeBook</title>
+</head>
+<body>
+    <header>
+        <h2><i class="fa-brands fa-fantasy-flight-games"></i>FakeBook</h2>
+        <nav>
+            <ul>
+                <li>Friends</li>
+                <li>Pages</li>
+                <li>Groups</li>
+                <li>My Ads</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+        <div class="header-icon" id="account-info-btn"><i class="fa-regular fa-circle-user"></i></div>
+    </header>
+    <main>
+        <section class="post-form-section">
+            <form id="post-form">
+                <textarea id="post-text" placeholder="What's on your mind?" rows="5"></textarea>
+                <label for="post-image"><i class="fa-solid fa-images"></i></label>
+                <input type="file" id="post-image" accept="image/*">
+                <button type="submit" id="post-button" disabled>Post</button>
+            </form>
+        </section>
+        <section class="posts-display" id="posts-container">
+            <!-- Posts Displayed Here -->
+        </section>
+    </main>
+    <!-- The Pop Up Modal -->
+    <div id="account-pop-up" class="pop-up">
+        <div class="pop-up-content">
+            <span class="close-btn"><i class="fa-solid fa-circle-xmark"></i></span>
+            <h3><strong>Account Information</strong></h3>
+            <img src="./assets/media/profilepic.jpg">
+            <div id="pop-up-info">
+                <!-- User Info Displayed -->
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="./assets/script/app.js"></script>
+</html>
+
