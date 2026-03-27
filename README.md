@@ -12,4 +12,4 @@ This web page will mimic a social network application that can post and view acc
 ## LIVE VIEW
 View the live application here:
 
-[Link to Your Deployed Application URL]
+[https://pattyruk.github.io/fakebook/]
