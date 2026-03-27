@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     postText.addEventListener('input', () => {
         const hasText = postText.value.trim().length > 0;
         const hasImage = postImage.value.length > 0;
-        postBtn.disabled = !(hasText || hasImage);
+        postBtn.disabled = !hasText || !hasImage;
     });
     // 2. Post Form 
     const createPostElement = (text, imgSrc) => {
